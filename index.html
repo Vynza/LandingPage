@@ -4,7 +4,24 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>VYNZA — Feel Every Beat | Official Music Streaming</title>
-    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              vynza: {
+                purple: '#8B5CF6',
+                dark: '#08080C',
+                card: '#12121A',
+                border: '#20202C'
+              }
+            }
+          }
+        }
+      }
+    </script>
   </head>
   <body class="bg-[#08080c] text-zinc-100 selection:bg-purple-600 selection:text-white">
     <!-- Navigation -->
@@ -179,6 +196,6 @@
       </div>
     </footer>
 
-    <script type="module" src="/js/script.js"></script>
+    <script type="module" src="./js/script.js"></script>
   </body>
 </html>
